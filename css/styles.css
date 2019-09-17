@@ -5,7 +5,8 @@ font-family: 'Lora', serif; */
 /* colors:
 #F17C39 (orange)
 #387BA6 (blue)
-#333333 (dark gray) */
+#333333 (dark gray)
+#5ab9ed (light blue hover) */
 
 /* hamburger menu
 https://www.cssscript.com/hamburger-toggle-animations/
@@ -71,11 +72,23 @@ p {
 	font-size: .9rem;
 	font-weight: 300;
 	padding: 2% 0;
+	color: #333333;
+}
+
+a {
+	text-decoration: none;
+	color: #F17C39;
+}
+
+a:hover {
+	cursor: pointer;
+	color:#999999;
 }
 
 ul {
 	font-size: .9rem;
 	margin: 0 20px;
+	font-weight: 300;
 }
 
 /* end fonts */
@@ -138,25 +151,41 @@ header {
   cursor: pointer;
   font-size: 2rem;
   height: 100vh;
-  left: -24rem;
-  padding: 6rem 2rem 2rem 2rem;
+  left: -50rem;
   position: fixed;
   top: 0;
-  width: 20rem;
-  z-index: 1;
+  width: 100%;
+  z-index: 2;
 }
 
 .nav.expanded { left: 0; }
 
 .nav ul {
   position: absolute;
-  top: 50%;
+  top: 30%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   list-style: none;
   margin: 0;
   padding: 0;
+	width: 100%;
+	text-align:center;
+}
+
+.nav ul li {
+	font-family: 'Lora', serif;
+	font-size: 2.5rem;
+	padding: 5% 0;
+}
+
+.nav ul li a{
+	color: #ffffff;
+}
+
+.nav ul li a:hover{
+	opacity: 0.6;
+  transition: 0.6s;
 }
 
 .nav-toggle {
@@ -169,7 +198,7 @@ header {
   position: fixed;
   top: 2rem;
   width: 3.6rem;
-  z-index: 2;
+  z-index: 4;
 }
 
 .nav-toggle:hover { opacity: 0.8; }
@@ -191,11 +220,24 @@ header {
   width: 100%;
 }
 
-.nav-toggle .nav-toggle-bar { margin-top: 0;}
+.nav-toggle .nav-toggle-bar {
+	margin-top: 0;
+	width: 63%;
+  height: .2rem;
+  border-radius: 4px;
+}
 
-.nav-toggle .nav-toggle-bar::after { margin-top: 0.8rem; }
+.nav-toggle .nav-toggle-bar::after {
+	margin-top: 0.6rem;
+	height: .2rem;
+  border-radius: 4px;
+}
 
-.nav-toggle .nav-toggle-bar::before { margin-top: -0.8rem; }
+.nav-toggle .nav-toggle-bar::before {
+	margin-top: -0.6rem;
+	height: .2rem;
+  border-radius: 4px;
+}
 
 .nav-toggle.expanded .nav-toggle-bar { background: transparent; }
 
@@ -266,6 +308,12 @@ header {
 	background-color: transparent;
 }
 
+.text-button:hover {
+	color: #ffffff;
+	background-color: #F17C39;
+	cursor: pointer;
+}
+
 .left {
 	float: left;
 	width: 50%;
@@ -274,6 +322,16 @@ header {
 .right {
 	float: right;
 	width: 50%;
+}
+
+.left-70 {
+	float: left;
+	width: 70%;
+}
+
+.right-30 {
+	float: right;
+	width: 30%;
 }
 
 .clear {
@@ -295,4 +353,13 @@ footer hr {
   width: 50px;
   background: #387BA6;
   margin: 4px 0;
+}
+
+footer a {
+	color: #387BA6;
+}
+
+.footer-logo {
+	max-width: 100px;
+	padding-top:25px;
 }
