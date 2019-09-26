@@ -11,6 +11,7 @@
 		<!-- stylesheets -->
 		<link type="text/css" rel="stylesheet" href="css/styles.css" />
 		<link href="BurgerSqueeze/dist/styles.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 		<!-- fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Nunito:300,400,700&display=swap" rel="stylesheet">
@@ -19,6 +20,7 @@
 
 		<!-- scripts -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://kit.fontawesome.com/a61cb35b75.js" crossorigin="anonymous"></script>
 
 
 
@@ -32,47 +34,57 @@
 		<div class="container">
 
 		<header>
-
-			<div class="header-content">
-				<img src="images/logos/caltina.png" alt="Caltina Logo" title="Caltina Logo">
-				<h1>salesforce.com solutions for digital asset managers</h1>
-				<h2>Leverage the Salesforce Platform to elevate deal flow and LP engagement</h2>
-
-			</div>
-
 			<div class="nav-toggle">
   			<div class="nav-toggle-bar"></div>
 			</div>
 			<nav class="nav">
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="products.html">Products</a></li>
+					<li><a href="product.html">Product</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
 
-			<nav class="desktop-menu">
-				<ul>
-          <li><a href="index.html">Home</a></li>
-					<li><a href="products.html">Products</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-
+			<div class="header-content">
+				<nav class="desktop-menu">
+					<ul>
+	          <li><a href="index.html">Home</a></li>
+						<li><a href="product.html">Product</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+				<img src="images/logos/caltina.png" alt="Caltina Logo" title="Caltina Logo">
+				<h1>salesforce.com solutions for alternative asset managers</h1>
+				<h2>Leverage the Salesforce Platform to elevate deal flow and LP engagement</h2>
+			</div>
 			<div class="overlay"></div>
 			<div class="header-image"></div>
 		</header>
 
 		<main>
 
-			<section class="home-1 container-80">
-				<h3>Integrated front-office solutions for private equity, family offices, real estate, secondaries, and fundless sponsors</h3>
-				<p>Based inside of the Salesforce platform and built form the ground up to accommodate the workflows of alternative asset managers; flexible to mold around firm-specific needs.</p>
-				<button type="button" name="button" class="text-button">Learn More</button>
+			<section class="home-1 container-85" data-aos="fade-up" data-aos-duration="2000">
+				<div class="left-content-70">
+					<h3>Integrated front-office solutions for private equity, family offices, real estate, secondaries, and fundless sponsors</h3>
+					<p>Based inside of the Salesforce platform and built form the ground up to accommodate the workflows of alternative asset managers; flexible to mold around firm-specific needs.</p>
+					<button type="button" name="button" class="text-button">Learn More</button>
+				</div>
+				<div class="right-content-30">
+					<h3>Contact</h3>
+							<h4>Location</h4>
+							<p>1234 31st Street<br>
+								San Francisco, CA
+							</p>
+							<h4>Contact</h4>
+							<p><a href="mailto:info@caltina.com">info@caltina.com</a><br>
+								202.222.5555
+							</p>
+				</div>
+				<div class="clear"></div>
 			</section>
-			<section class="home-2 container-80">
+			<section class="home-2 container-85" data-aos="fade-up" data-aos-duration="2000">
 				<h3>Contact</h3>
 					<div class="left">
 						<h4>Location</h4>
@@ -88,30 +100,35 @@
 					</div>
 					<div class="clear"></div>
 			</section>
-			<section class="home-3">
+			<aside class="home-3" data-aos="fade-up" data-aos-duration="2000">
 				<h3>"Poor people can't afford cheap [solutions]"</h3>
-			</section>
-			<section class="home-4 container-80">
-				<h3>Solutions For:</h3>
-					<ul>
-						<li>Private equity &amp; venture</li>
-						<li>Pensions, endowments, family offices</li>
-						<li>Sovereign wealth</li>
-						<li>Integrated with google apps &amp; outlook</li>
-						<li>API connections to deal, LP, and company databases</li>
-						<li>Expose back-office data for front office efficiencies</li>
-					</ul>
-
-			</section>
-			<section class="home-5 container-80">
+			</aside>
+			<article class="home-4 container-85" data-aos="fade-up" data-aos-duration="2000">
+				<div class="left-content-60">
+					<h3>Solutions For:</h3>
+					<div id="multi-column">
+						<ul>
+							<li>Private equity &amp; venture</li>
+							<li>Pensions, endowments, family offices</li>
+							<li>Sovereign wealth</li>
+							<li>Integrated with google apps &amp; outlook</li>
+							<li>API connections to deal, LP, and company databases</li>
+							<li>Expose back-office data for front office efficiencies</li>
+						</ul>
+					</div>
+				</div>
+					<h3 class="right-content-40">"Poor people can't afford cheap [solutions]"</h3>
+					<div class="clear"></div>
+			</article>
+			<section class="home-5 container-85 container-50" data-aos="fade-up" data-aos-duration="2000">
 				<p>Caltina is a boutique technology partner serving all verticals within the alternative asset industry. We’ve seen it all and take pride in every chance we get to deliver real value to the firms we work with.</p>
 
 			</section>
 
 		</main>
 
-		<footer>
-			<div class="container-80">
+		<footer data-aos="fade-up" data-aos-duration="2000">
+			<div class="container-85">
 				<div class="left-70">
 					<h4>Caltina</h4>
 					<hr>
@@ -149,6 +166,10 @@
 		</div>
 
 
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+       AOS.init();
+     </script>
 	<script src="js/backstretch.js"></script>
 	<script src="BurgerSqueeze/dist/index.js"></script>
 	<script src="js/scripts.js"></script>
