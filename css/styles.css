@@ -417,6 +417,14 @@ header {
 	border: 1px solid #F17C39;
 }
 
+.text-button a {
+	color: #ffffff;
+}
+
+.text-button a:hover {
+	color: #F17C39;
+}
+
 .text-button:hover {
 	color: #F17C39;
 	border: 1px solid #F17C39;
