@@ -11,6 +11,7 @@
 		<!-- stylesheets -->
 		<link type="text/css" rel="stylesheet" href="css/styles.css" />
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link href="lightbox/css/lightbox.css" rel="stylesheet" />
 
 		<!-- fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Nunito:300,400,700&display=swap" rel="stylesheet">
@@ -19,9 +20,7 @@
 
 		<!-- scripts -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://kit.fontawesome.com/a61cb35b75.js" crossorigin="anonymous"></script>
-
-
+    <script src="https://kit.fontawesome.com/a61cb35b75.js" crossorigin="anonymous"></script>
 
 		<!--[if lt IE 9]>
 			<script src="js/html5shiv-printshiv.min.js"></script>
@@ -55,74 +54,62 @@
 					</ul>
 				</nav>
 				<img src="images/logos/caltina.png" alt="Caltina Logo" title="Caltina Logo">
-				<h1>salesforce.com solutions for alternative asset managers</h1>
-				<h2>Leverage the Salesforce Platform to elevate deal flow and LP engagement</h2>
+				<h1 id="page-title">Contact</h1>
+				<h2>Let's chat</h2>
 			</div>
 			<div class="overlay"></div>
 			<div class="header-image"></div>
 		</header>
 
 		<main>
+			<div class="flex-container">
+				<section class="contact-1 container-85" data-aos="fade-up" data-aos-duration="2000">
+						<h3>Implementation Process</h3>
+						<p>Every fund and situation is different. Caltina starts with a special base Salesforce.com configuration (or installs to your existing instance) and then molds the solution to fit your fund’s needs. We’ll want to collect as much data or as many spreadsheets you have along the way, and import all of that into the platform to put an end to the back-and-forth of attachments so you can focus on what matters.</p>
+						<h3>Contact us for a demo and pricing</h3>
+						<p>Every asset manager has different needs to maximize the value of the Salesforce platform, but we appreciate the need minimize up-front costs.</p>
 
-			<section class="home-1 container-85" data-aos="fade-up" data-aos-duration="2000">
-				<div class="left-content-70">
-					<h3>Integrated front-office solutions for private equity, family offices, real estate, secondaries, and fundless sponsors</h3>
-					<p>Based inside of the Salesforce platform and built form the ground up to accommodate the workflows of alternative asset managers; flexible to mold around firm-specific needs.</p>
-					<button type="button" name="button" class="text-button">Learn More</button>
-				</div>
-				<div class="right-content-30">
-					<h3>Contact</h3>
-							<h4>Location</h4>
-							<p>1234 31st Street<br>
-								San Francisco, CA
-							</p>
-							<h4>Contact</h4>
-							<p><a href="mailto:info@caltina.com">info@caltina.com</a><br>
-								202.222.5555
-							</p>
-				</div>
-				<div class="clear"></div>
-			</section>
-			<section class="home-2 container-85" data-aos="fade-up" data-aos-duration="2000">
-				<h3>Contact</h3>
-					<div class="left">
-						<h4>Location</h4>
-						<p>1234 31st Street<br>
-							San Francisco, CA
-						</p>
-					</div>
-					<div class="right">
-						<h4>Contact</h4>
-						<p><a href="mailto:info@caltina.com">info@caltina.com</a><br>
-							202.222.5555
-						</p>
-					</div>
-					<div class="clear"></div>
-			</section>
-			<aside class="home-3" data-aos="fade-up" data-aos-duration="2000">
-				<h3>"Poor people can't afford cheap [solutions]"</h3>
-			</aside>
-			<article class="home-4 container-85" data-aos="fade-up" data-aos-duration="2000">
-				<div class="left-content-60">
-					<h3>Solutions For:</h3>
-					<div id="multi-column">
-						<ul>
-							<li>Private equity &amp; venture</li>
-							<li>Pensions, endowments, family offices</li>
-							<li>Sovereign wealth</li>
-							<li>Integrated with google apps &amp; outlook</li>
-							<li>API connections to deal, LP, and company databases</li>
-							<li>Expose back-office data for front office efficiencies</li>
-						</ul>
-					</div>
-				</div>
-					<h3 class="right-content-40">"Poor people can't afford cheap [solutions]"</h3>
-					<div class="clear"></div>
-			</article>
-			<section class="home-5 container-85 container-50" data-aos="fade-up" data-aos-duration="2000">
-				<p>Caltina is a boutique technology partner serving all verticals within the alternative asset industry. We’ve seen it all and take pride in every chance we get to deliver real value to the firms we work with.</p>
+						<form class="contact-form" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
 
-			</section>
+							<div class="fullname input-section">
+								<label for="fullname" class="label_input_wrap">Name&#42;</label>
+								<input class="form-field" type="text" name="fullname" id="fullname" required/>
+							</div>
+
+							<div class="email input-section">
+								<label for="email" class="label_input_wrap">Email&#42;</label>
+								<input class="form-field" type="email" name="email" id="email" required />
+							</div>
+
+							<div class="telephone input-section">
+								<label for="telephone" class="label_input_wrap">Telephone</label>
+								<input class="form-field" type="tel" name="telephone" id="telephone"/>
+							</div>
+
+							<div class="comments input-section">
+								<label for="comments" class="label_input_wrap">Comments&#42;</label>
+								<textarea class="form-field" name="comments" id="comments" cols="35" rows="5" required></textarea>
+							</div>
+
+							<div class="submit input-section">
+								<input type="submit" value="Contact Us!" />
+							</div>
+
+						</form>
+					</section>
+
+					<section class="contact-2 container-85" data-aos="fade-up" data-aos-duration="2000">
+							<aside>
+								<h4>Number of Successful Deployments</h4>
+								<p>47</p>
+								<h4>Client Locations We Have Served</h4>
+								<p>New York | Chicago | LA | Denver | Boston | London | Dallas | Seattle</p>
+								<h4>Office Hours</h4>
+								<p>Monday-Friday<br>
+								7AM - 5PM Pacific time</p>
+							</aside>
+					</section>
+			</div>
 
 		</main>
 
@@ -171,6 +158,7 @@
      </script>
 	<script src="js/backstretch.js"></script>
 	<script src="js/scripts.js"></script>
+	<script src="lightbox/js/lightbox.js"></script>
 	</body>
 
 </html>

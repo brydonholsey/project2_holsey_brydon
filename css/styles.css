@@ -331,7 +331,7 @@ header {
 	padding: 18px 0 30px 0;
 }
 
-.home-2, {
+.home-2 {
 	padding: 18px 0 30px 0;
 }
 
@@ -341,7 +341,7 @@ header {
 	padding: 50px 5%;
 }
 
-.home-4 {
+.home-4, .product-1, .contact-1 {
 	padding: 18px 0 30px 0;
 	border-bottom: 1px solid #cccccc;
 }
@@ -360,12 +360,7 @@ header {
 	line-height: 2rem;
 }
 
-.product-1 {
-	border-bottom: 1px solid #cccccc;
-	padding: 18px 0 30px 0;
-}
-
-.product-2 {
+.product-2, .contact-2 {
 	padding: 18px 0 30px 0;
 }
 
@@ -399,6 +394,13 @@ header {
 .about-4 {
 	text-align: center;
 	padding: 50px 5%;
+}
+
+.contact-2 p{
+	font-size: 1.2rem;
+	line-height: 2rem;
+	letter-spacing: .08rem;
+	padding-top: 0px;
 }
 
 .container-85 {
@@ -477,6 +479,43 @@ header {
 .employee-image img {
 	width: 100%;
 	max-width: 300px;
+}
+
+/* -------------------------- form styles -------------------------------- */
+.contact-form {
+  color: #F17C39;
+}
+
+.label_input_wrap {
+  display: block;
+}
+
+.submit input{
+  border: 1px solid #F17C39;
+  background: white;
+  border-radius: 20px;
+  color: #F17C39;
+  padding: 8px 20px;
+}
+
+.submit input:hover{
+  border: 1px solid #F17C39;
+  background: #F17C39;
+  color: white;
+}
+
+input,
+textarea {
+  padding: 8px 10px;
+  border: 1px solid #F17C39;
+}
+
+.form-field {
+	width: 98%;
+}
+
+.input-section {
+  padding:10px;
 }
 
 /* footer */
@@ -619,11 +658,22 @@ footer a {
 		min-width: 245px;
 	}
 
+	.form-field {
+		width: 60%;
+		max-width: 500px;
+	}
+
 }
 
 @media (min-width:900px) {
 	.header-content h1 {
 		font-size: 1.6rem;
+	}
+
+	.flex-container {
+		display: flex;
+		max-width: 85%;
+		margin: 0 auto;
 	}
 
 	.container-90 {
@@ -638,6 +688,24 @@ footer a {
 	.container-50 {
 		max-width: 50%;
 		margin: 0 auto;
+	}
+
+	.contact-1 {
+		padding-right: 20px;
+		border-bottom: none;
+	}
+
+	.contact-2 {
+		min-width: 25%;
+		padding-left: 10%;
+	}
+
+	.contact-2 p {
+		padding-bottom: 30px;
+	}
+
+	.contact-2 h4 {
+		padding: 1rem 0 .5rem;
 	}
 
 }
