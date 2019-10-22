@@ -9,7 +9,7 @@ $form->processForm(
 
 	'brydonsholsey.com' // Put you mail domain here
 	,
-	'Brydon Holsey | Contact' // Put your site name / form name here
+	'Caltina | Contact' // Put your site name / form name here
 	,
 	'brydon.holsey@gmail.com' // Where will the form notification be sent?
 	,
