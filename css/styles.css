@@ -481,6 +481,14 @@ header {
 	max-width: 300px;
 }
 
+figcaption {
+	font-size: .9rem;
+  font-weight: 300;
+  padding: 2% 0;
+  color: #666666;
+  line-height: 1.6rem;
+}
+
 /* -------------------------- form styles -------------------------------- */
 .contact-form {
   color: #F17C39;
